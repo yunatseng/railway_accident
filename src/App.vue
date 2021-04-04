@@ -21,7 +21,7 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <Main />
     </v-main>
     <template>
       <v-footer
@@ -32,24 +32,30 @@
           flat
           tile
           color="primary"
-          class="white--text text-center"
+          class="white--text text-left"
+          width="100%"
         >
           <v-card-text class="white--text">
-            Phasellus feugiat arcu sapien, et iaculis
-            ipsum elementuamet. Mauris cursus commodo
-            interdum. Praesent ut risus eget metus
-            luctus accumsan id ultrices nunc. Sed
-            at orci sed massa consectetur dignissim
-            a sit amet dui. Duis commodo vitae velit
-            et faucibus. Morbi vehicula lacinia malesuada.
-            Nulla placerat augue vel ipsum ultrices,
-            cursus iaculis dui sollicitudin. Ves
+            <ol>
+              <li
+                v-for="(citation,i) in citeList"
+                :key="i"
+              >
+                <a
+                  class="white--text"
+                  :href="citation"
+                  target="_blank"
+                >
+                  {{ citation }}
+                </a>
+              </li>
+            </ol>
           </v-card-text>
 
           <v-divider />
 
           <v-card-text
-            class="white--text"
+            class="white--text text-center"
           >
             {{ new Date().getFullYear() }} —
             <a
@@ -65,17 +71,26 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Main from './components/Main.vue';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Main,
   },
 
   data: () => ({
-    //
+    citeList: ['https://www.railway.gov.tw/tra-tip-web/adr/about-public-info-6-2?selectIndex=1',
+      'https://www.chinatimes.com/newspapers/20200428000636-260107?chdtv',
+      'https://www.railway.gov.tw/tra-tip-web/adr/about-public-info-6-2?selectIndex=1',
+      'https://www.railway.gov.tw/tra-tip-web/adr/about-public-info-6-2?selectIndex=1',
+      'https://zh.wikipedia.org/wiki/2020%E5%B9%B4%E8%87%BA%E9%90%B5%E7%91%9E%E8%8A%B3%E7%8C%B4%E7%A1%90%E8%B7%AF%E6%AE%B5%E8%B5%B0%E5%B1%B1%E4%BA%8B%E6%95%85',
+      'https://www.railway.gov.tw/tra-tip-web/adr/about-public-info-6-2?selectIndex=1',
+      'https://udn.com/news/story/7266/5208604',
+      'https://www.cna.com.tw/news/asoc/202101190278.aspx',
+      'https://www.motc.gov.tw/ch/home.jsp?id=2&parentpath=0&mcustomize=news_view.jsp&dataserno=202102230005&aplistdn=ou=data,ou=news,ou=chinese,ou=ap_root,o=motc,c=tw&toolsflag=Y&imgfolder=img%2Fstandard',
+      'https://zh.wikipedia.org/wiki/2021%E5%B9%B4%E5%A4%AA%E9%AD%AF%E9%96%A3%E8%99%9F%E5%88%97%E8%BB%8A%E5%87%BA%E8%BB%8C%E4%BA%8B%E6%95%85'],
   }),
 };
 </script>
