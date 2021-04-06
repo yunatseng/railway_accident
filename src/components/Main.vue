@@ -40,6 +40,7 @@
         >
           <v-timeline-item
             v-for="(event,i) in eventList"
+            :id="`${event.normal}-${event.date.split(' ').join('-')}`"
             :key="i"
             color="dot"
             :large="$vuetify.breakpoint.smAndDown?false:true"
@@ -50,7 +51,10 @@
             </template>
             <v-card class="elevation-2">
               <v-card-title class="headline">
-                {{ event.normal }} <span
+                <a :href="`#${event.normal}-${event.date.split(' ').join('-')}`">
+                  {{ event.normal }}
+                </a>
+                <span
                   v-if="$vuetify.breakpoint.smAndDown"
                   class="ml-2 title font-weight-light"
                 >{{ event.date }}</span>
