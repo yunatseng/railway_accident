@@ -2,11 +2,23 @@
   <v-container fluid>
     <v-row>
       <v-img
-        class="white--text"
-        src="../assets/train2.jpeg"
+        class="grey lighten-5 white--text"
+        src="../assets/train2_test.jpeg"
+        :lazy-src="`https://picsum.photos/10/6?image=1`"
         :height="$vuetify.breakpoint.smAndDown?'100%':'400'"
-        gradient="to top, rgba(0,0,0,.44), rgba(0,0,0,.44)"
       >
+        <template v-slot:placeholder>
+          <v-row
+            class="fill-height ma-0"
+            align="center"
+            justify="center"
+          >
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            />
+          </v-row>
+        </template>
         <v-container class="fill-height">
           <v-row
             align="center"
