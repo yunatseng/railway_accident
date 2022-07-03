@@ -63,9 +63,7 @@
             </template>
             <v-card class="elevation-2">
               <v-card-title class="headline">
-                <a :href="`#${event.normal}-${event.date.split(' ').join('-')}`">
-                  {{ event.normal }}
-                </a>
+                {{ event.normal }}
                 <span
                   v-if="$vuetify.breakpoint.smAndDown"
                   class="ml-2 title font-weight-light"
@@ -197,9 +195,9 @@ export default {
         date: '110 年 4 月',
         normal: '太魯閣號列車出軌事故',
         normalAccident: [{
-          id: 10, text: '太魯閣號 408 車次出軌事故（花蓮縣消防局稱為花蓮縣0402 交通事故），為發生於 2021 年 4 月 2 日上午 9 時 28 分，台灣花蓮縣秀林鄉和仁段清水隧道北口，台鐵北迴線的太魯閣自強號列車脫軌事故。載有 492 名乘客的台鐵 408 車次太魯閣號列車在行經該隧道時，與滑落邊坡侵入路線的工程車碰撞出軌後衝入隧道中且擦撞隧道壁，並造成 50 人死亡和 216 人輕重傷。', image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/2021%E5%B9%B44%E6%9C%883%E6%97%A5%E5%8F%B0%E9%93%81%E7%AC%AC408%E6%AC%A1%E5%92%8C%E4%BB%81%E5%B4%87%E5%BE%B7%E9%97%B4%28%E6%B8%85%E6%B0%B4%E9%9A%A7%E9%81%93%29%E4%BA%8B%E6%95%85-%E7%AE%80%E6%8A%A51.png', imgText: '由 台灣鐵路管理局, Attribution, https://commons.wikimedia.org/w/index.php?curid=103024161',
+          id: 10, text: '太魯閣號 408 車次出軌事故（花蓮縣消防局稱為花蓮縣0402 交通事故），為發生於 2021 年 4 月 2 日上午 9 時 28 分，台灣花蓮縣秀林鄉和仁段清水隧道北口，台鐵北迴線的太魯閣自強號列車脫軌事故。載有 492 名乘客的台鐵 408 車次太魯閣號列車在行經該隧道時，與滑落邊坡侵入路線的工程車碰撞出軌後衝入隧道中且擦撞隧道壁，並造成 49 人罹難和 213人 輕重傷。', image: 'https://upload.wikimedia.org/wikipedia/commons/0/0c/20210402_Taroko_Express_Derailment.jpg', imgText: '事故現場關鍵地點示意圖（背景圖攝於2009年）由 Fred Hsu, translated and with editable text by Tze Chiang Hao - 自己的作品, https://commons.wikimedia.org/w/index.php?curid=102955947',
         }, {
-          id: 10, text: '本次事故是台灣鐵道史上僅次於 1948 年新店溪橋火燒車事故的嚴重傷亡事故，死亡人數遠超過 2018 年所發生的普悠瑪列車出軌事故，也是自從 1949 年中華民國政府遷臺以來最嚴重的死傷事故。', image: 'https://upload.wikimedia.org/wikipedia/commons/2/22/2021%E5%B9%B4%E5%A4%AA%E9%AD%AF%E9%96%A3%E5%88%97%E8%BB%8A%E5%87%BA%E8%BB%8C%E4%BA%8B%E6%95%85_01.jpg', imgText: '由 行政院, Attribution, https://commons.wikimedia.org/w/index.php?curid=102908991',
+          id: 10, text: '本次事故是台灣鐵道史上僅次於 1948 年新店溪橋火燒車事故的嚴重傷亡事故，死亡人數遠超過 2018 年所發生的普悠瑪列車出軌事故，也是自從 1949 年中華民國政府遷臺以來最嚴重的死傷事故。', image: 'https://upload.wikimedia.org/wikipedia/commons/2/22/2021%E5%B9%B4%E5%A4%AA%E9%AD%AF%E9%96%A3%E5%88%97%E8%BB%8A%E5%87%BA%E8%BB%8C%E4%BA%8B%E6%95%85_01.jpg', imgText: '從隧道外目擊太魯閣號出軌事故現場 由 行政院, Attribution, https://commons.wikimedia.org/w/index.php?curid=102908991',
         }],
         abnormal: '',
       },
