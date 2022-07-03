@@ -9,28 +9,28 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuetify": "^2.4.0"
+    "core-js": "^3.23.3",
+    "vue": "^2.7.0",
+    "vue-router": "^3.5.4",
+    "vuetify": "^2.6.7"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-babel": "^4.5.19",
+    "@vue/cli-plugin-eslint": "^4.5.19",
+    "@vue/cli-plugin-router": "^4.5.19",
+    "@vue/cli-service": "^4.5.19",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-vue": "^6.2.2",
-    "sass": "^1.32.0",
-    "sass-loader": "^10.0.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^10.3.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-vuetify": "~2.3.1",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.7.0"
+    "vue-template-compiler": "^2.7.0",
+    "vuetify-loader": "^1.7.3"
   },
   "eslintConfig": {
     "root": true,
